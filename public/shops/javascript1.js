@@ -26,7 +26,7 @@ const musiccontent=document.getElementsByClassName('music-content')[0];
 var cartItems=document.getElementsByClassName('cart-items')[0];
 
 window.addEventListener('DOMContentLoaded',()=>{
-    axios.get('http://localhost:3000/?page=1').then((data)=>{
+    axios.get('http://34.208.16.149:3000/?page=1').then((data)=>{
        console.log(data)
        if(data.request.status==200){
             const products=data.data;
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     }).catch(err=>console.log(err));
 
 
-    axios.get('http://localhost:3000/cart').then(data=>{
+    axios.get('http://34.208.16.149:3000/cart').then(data=>{
         console.log('data')
         console.log(data)
         if(data.request.status==200){
@@ -91,14 +91,14 @@ window.addEventListener('DOMContentLoaded',()=>{
 document.getElementById('cartPurchaseBtn').addEventListener('click',placeOrder);
 
 function placeOrder(){
-    axios.post('http://localhost:3000/orders').then(orderDetails => {
+    axios.post('http://34.208.16.149:3000/orders').then(orderDetails => {
         console.log(orderDetails.data.orderDetails);
         alert(`Order successfully placed with id:${orderDetails.data.orderDetails.id}`).catch(err=>console.log(err));
     })
 }
 
 function addToCart(productId){
-    axios.post('http://localhost:3000/cart',{productId:productId}).then(res=>{
+    axios.post('http://34.208.16.149:3000/cart',{productId:productId}).then(res=>{
  
         if(res.status==200){
             
@@ -230,7 +230,7 @@ for(var i=0;i<paginationBtns.length;i++){
 }
 function showProds(e){
     var pagenumber=e.target.value;
-    axios.get(`http://localhost:3000/?page=${pagenumber}`).then(data=>{
+    axios.get(`http://34.208.16.149:3000/?page=${pagenumber}`).then(data=>{
         console.log(data);
         musiccontent.innerHTML=''
         if(data.request.status==200){

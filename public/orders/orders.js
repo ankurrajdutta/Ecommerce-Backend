@@ -1,7 +1,7 @@
 const orderDetails=document.getElementsByClassName('orderDetails')[0];
 
 window.addEventListener('DOMContentLoaded',()=>{
-    axios.get('http://localhost:3000/orders').
+    axios.get('http://34.208.16.149:3000/orders').
     then(res=>{
         var data=res.data;
         console.log(data);
