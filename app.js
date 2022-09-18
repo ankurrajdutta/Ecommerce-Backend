@@ -37,6 +37,9 @@ app.use((req, res, next) => {
 });
 
 app.use('/admin', adminRoutes);
+app.use((req,res)=>{
+  res.sendFile(path.join(__dirnamem,`public/${req.url}`))
+})
 app.use(shopRoutes);
 
 app.use(errorController.get404);

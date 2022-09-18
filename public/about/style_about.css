@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+
+}
+li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#theGenerics{
+    padding: 20px;
+    font-size:50px;
+    color: white;
+    background-color: grey;
+    text-align: center;
+}
+.aboutContent h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.aboutContent{
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.content{
+    display: block;
+}
+.img-container{
+    float: left;
+}
+.footer{
+    background-color: rgb(28, 172, 221);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.footer h4{
+    color: white;
+    font-size: 80px;
+    margin-left: 50px;
+}
+.footerConnect img{   
+    margin-top: 50px;
+    margin-right: 50px;
+    max-height: 20px;
+}

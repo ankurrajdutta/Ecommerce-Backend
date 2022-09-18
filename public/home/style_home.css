@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+
+}
+li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#theGenerics{
+    padding: 20px;
+    font-size:50px;
+    color: white;
+    background-color: grey;
+    text-align: center;
+}
+.btn-latestAlbum{
+    background-color: grey;
+    color: white;
+    border: 1px solid lightblue;
+    padding: 20px;
+    cursor: pointer;
+}
+.playbtn{
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding:20px;
+    border:2px solid lightskyblue;
+    background-color: inherit;
+    margin-top: 20px;
+    color: lightskyblue;
+}
+#tours-title{
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+}
+#eventdetails{  
+    display: block;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Tour{
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.Tour button{
+    background-color: skyblue;
+    font-weight: bold;
+    color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer{
+    background-color: rgb(28, 172, 221);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.footer h4{
+    color: white;
+    font-size: 80px;
+    margin-left: 50px;
+}
+.footerConnect img{   
+    margin-top: 50px;
+    margin-right: 50px;
+    max-height: 20px;
+}
